@@ -2371,8 +2371,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #212529;
-  background-color: #F195B2;
-  border-color: #F195B2;
+  background-color: #f52734;
+  border-color: #f52734;
 }
 
 .btn-primary:hover {
@@ -2397,8 +2397,8 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #eb6891;
-  border-color: #ea5d89;
+  background-color: #f52734;
+  border-color: #f52734;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -2408,8 +2408,8 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #212529;
-  background-color: #62C3E7;
-  border-color: #62C3E7;
+  background-color: #069985;
+  border-color: #069985;
 }
 
 .btn-secondary:hover {
@@ -2420,9 +2420,9 @@ fieldset:disabled a.btn {
 
 .btn-secondary:focus, .btn-secondary.focus {
   color: #212529;
-  background-color: #41b6e2;
+  background-color: #4acfff;
   border-color: #36b2e0;
-  box-shadow: 0 0 0 0.2rem rgba(88, 171, 203, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(131, 220, 255, 0.5);
 }
 
 .btn-secondary.disabled, .btn-secondary:disabled {
@@ -6355,9 +6355,11 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #F195B2 !important;
+  background-color: #f52734 !important;
 }
-
+.bg-primary2 {
+  background-color: #f52734 !important;
+}
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
@@ -9525,7 +9527,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #F195B2 !important;
+  color: #f52734 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9533,7 +9535,7 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #62C3E7 !important;
+  color: #069985 !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
@@ -9834,7 +9836,7 @@ h6,
   left: 0;
   width: 100px;
   height: 1px;
-  background: #62C3E7;
+  background: #f52734;
 }
 
 .section-title.text-center::before,
@@ -9894,7 +9896,7 @@ h6,
   width: 0;
   height: 0;
   left: -5px;
-  border-left: 25px solid #F195B2;
+  border-left: 25px solid #f52734;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
 }
@@ -9978,13 +9980,13 @@ h6,
   right: 0;
   bottom: -15px;
   left: 0;
-  background: #F195B2;
+  background: #069985;
   border-radius: 150px;
   z-index: -1;
 }
 
 .service-item .service-img img {
-  transition: 1s;
+  transition: 2s;
 }
 
 .service-item:hover .service-img img {
