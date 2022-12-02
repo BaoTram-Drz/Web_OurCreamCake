@@ -6563,7 +6563,7 @@ button.bg-dark:focus {
 }
 
 .rounded-circle {
-  border-radius: 50% !important;
+  border-radius: 40% !important;
 }
 
 .rounded-pill {
@@ -9980,12 +9980,12 @@ h6,
 
 .service-item .service-img {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 150px;
+  border-radius: 50px;
   z-index: 1;
 }
 
@@ -9994,19 +9994,19 @@ h6,
   content: "";
   top: 15px;
   right: 0;
-  bottom: -15px;
+  bottom: -10px;
   left: 0;
   background: var(--imgsv);
-  border-radius: 150px;
+  border-radius: 100px;
   z-index: -1;
 }
 
 .service-item .service-img img {
-  transition: 2s;
+  transition: 0.5s;
 }
 
 .service-item:hover .service-img img {
-  transform: rotate(360deg);
+  transform: rotate(60deg);
 }
 
 .product-item,
