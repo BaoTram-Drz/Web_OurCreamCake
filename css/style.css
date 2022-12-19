@@ -35,6 +35,8 @@
   --btn2border: gray;
   --btnservice: rgb(30, 3, 8);
   --imgsv:rgb(185, 58, 117);
+  --navbarhover:rgb(255, 183, 214);
+  --navbarbghover: gray;
   --light: #FFFFFF;
   --dark: #333333;
   --breakpoint-xs: 0;
@@ -619,25 +621,25 @@ pre code {
 
 @media (min-width: 576px) {
   .container, .container-sm {
-    max-width: 540px;
+    max-width: 740px;
   }
 }
 
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
-    max-width: 720px;
+    max-width: 920px;
   }
 }
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
-    max-width: 960px;
+    max-width: 1060px;
   }
 }
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px;
+    max-width: 1340px;
   }
 }
 
@@ -6128,6 +6130,7 @@ a.close.disabled {
   display: none;
   float: left;
   width: 100%;
+  max-height: 500px;
   margin-right: -100%;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
@@ -9792,16 +9795,16 @@ h6,
 }
 
 .navbar-light .navbar-nav .nav-link {
-  padding: 30px 15px;
+  padding: 30px 20px;
   color: #333333;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   outline: none;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #fb6f92;
+  color: var(--navbarhover);
 }
 
 @media (max-width: 991.98px) {
@@ -9812,7 +9815,7 @@ h6,
 
 @media (min-width: 992px) {
   .navbar-light {
-    border-radius: 60px;
+    border-radius: 20px;
   }
   #header-carousel,
   .page-header {
@@ -9825,7 +9828,6 @@ h6,
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
@@ -10116,8 +10118,8 @@ h6,
 }
 
 .testimonial-carousel .owl-item img {
-  width: 80px;
-  height: 80px;
+  width: 280px;
+  height: 280px;
   border-radius: 80px;
 }
 
@@ -10130,8 +10132,8 @@ h6,
   position: relative;
   display: inline-block;
   margin: 0 8px;
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   border-radius: 15px;
   background: #F195B2;
 }
