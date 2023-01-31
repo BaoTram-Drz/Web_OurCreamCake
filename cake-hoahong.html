@@ -26,152 +26,143 @@
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-primary py-3 d-none d-md-block">
-    </div>
-    <!-- Topbar End -->
+<!-- Topbar Start -->
+<div class="container-fluid topbar"></div>
+<!-- Topbar End -->
 
-    <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
-        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
-                <a href="index.html" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 display-4 text-primary">
-                        <span class="text-secondary">BÁNH</span>KEM
-                    </h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Trang chủ</a>
-                        <a href="about.html" class="nav-item nav-link">Giới thiệu</a>
-                        <a href="product.html" class="nav-item nav-link active">Sản phẩm</a>
-                    </div>
-                    <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
-                        <h1 class="m-0 display-4 text-primary">
-                            <span class="text-secondary">BÁNH</span>KEM
-                        </h1>
-                    </a>
-                    <div class="navbar-nav mr-auto py-0">
-                        <a href="service.html" class="nav-item nav-link">Dịch vụ</a>
-                        <a href="promotion.html" class="nav-item nav-link">Khuyến mãi</a>
-                        <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
-                    </div>
-                </div>
-            </nav>
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a href="index.html" class="navbar-brand d-block d-lg-none">
+        <h1 class="m-0 display-4 text-primary">
+            <span class="text-secondary">BÁNH</span>KEM
+        </h1>
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav ml-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Trang chủ</a>
+            <a href="about.html" class="nav-item nav-link">Giới thiệu</a>
+            <a href="product.html" class="nav-item nav-link active">Sản phẩm</a>
+        </div>
+        <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+            <h1 class="m-0 display-4 text-primary">
+                <span class="text-secondary">BÁNH</span>KEM
+            </h1>
+        </a>
+        <div class="navbar-nav mr-auto py-0">
+            <a href="service.html" class="nav-item nav-link">Dịch vụ</a>
+            <a href="promotion.html" class="nav-item nav-link">Khuyến mãi</a>
+            <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
         </div>
     </div>
-    <!-- Navbar End -->
+</nav>
+<!-- Navbar End -->
 
-    <!-- Header Start -->
-    <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px">
-        <div class="container text-center">
-            <div class="d-inline-flex align-items-center text-white">
-                <h1 class="text-white text-size-top mt-lg-6">Trang chủ</h1>
-                <i class="fa fa-heart px-3 pt-4"></i>
-                <h1 class="text-white text-size-top mt-lg-6">Sản Phẩm</h1>
-                <i class="fa fa-heart px-3 pt-4"></i>
-                <h1 class="text-white text-size-top mt-lg-6">Hoa hồng</h1>
+<!-- Header Start -->
+<div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px">
+    <div class="container text-center">
+        <div class="d-inline-flex align-items-center text-white">
+            <h1 class="text-white text-size-top mt-lg-6">Trang chủ</h1>
+            <i class="fa fa-heart traitim"></i>
+            <h1 class="text-white text-size-top mt-lg-6">Sản Phẩm</h1>
+            <i class="fa fa-heart traitim"></i>
+            <h1 class="text-white text-size-top mt-lg-6">Hoa hồng</h1>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- Products Start -->
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <img class="w-100 border border-topnavcl rounded" src="imagebanhkem/sp-hoahong.png">
+            </div>
+            <div class="col-sm-7 px-5 h-100 p-30 pt-5">
+                <h1>Bánh kem hoa hồng</h1>
+                <div class="d-flex mb-3">
+                    <div class="text-secondary mr-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <h3 class="font-weight-semi-bold mb-4">199k</h3>
+                <div class="d-flex mb-3 f-si pb-1 ">
+                    <form action="#" method="post">
+                        <div class="d-flex">
+                            <input type="number" class="form-control p-4" id="soluong" placeholder="Nhập số lượng" />
+                            <input type="text" class="form-control p-4" id="sdt" placeholder="Nhập số điện thoại" />
+                        </div>
+                        <textarea type="text" class="form-control p-4 mt-1" id="diachi" rows="1"
+                            placeholder="Địa chỉ của bạn"></textarea>
+                        <textarea type="text" class="form-control p-4 mt-1" id="ghichu" rows="1"
+                            placeholder="Ghi chú"></textarea>
+                    </form>
+                </div>
+                <div class="align-items-center mb-4 pt-2">
+                    <button class="btn btn-primary btn-newheight mr-3">
+                        <i class="fa fa-shopping-cart mr-1"></i> Đặt mua
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Header End -->
+</div>
+<!-- Products End -->
 
-    <!-- Products Start -->
-    <div class="container-fluid">
-        <div class="container">
+<!-- Footer Start -->
+<div class="container-fluid footer" style="margin-top: 90px">
+    <div class="row">
+        <div class="col-12 mt-2 mb-4">
             <div class="row">
-                <div class="col-5">
-                    <img class="w-100 border border-topnavcl rounded" src="imagebanhkem/sp-hoahong.png">
+                <div class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0 px-5">
+                    <h5 class="font-weight-bold mb-2">Địa chỉ</h5>
+                    <p class="mb-2">KTX Khu A ĐHQG TPHCM</p>
+                    <p class="mb-0">0323456789</p>
                 </div>
-                <div class="col-7 px-5 h-100 p-30 pt-5">
-                    <h1>Bánh kem hoa hồng</h1>
-                    <div class="d-flex mb-3">
-                        <div class="text-secondary mr-2">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <h3 class="font-weight-semi-bold mb-4">199k</h3>
-                    <div class="d-flex mb-3 f-si pb-1 ">
-                        <form action="#" method="post">
-                            <div class="d-flex">
-                                <input type="number" class="form-control p-4" id="soluong"
-                                    placeholder="Nhập số lượng" />
-                                <input type="text" class="form-control p-4" id="sdt" placeholder="Nhập số điện thoại" />
-                            </div>
-                            <textarea type="text" class="form-control p-4 mt-1" id="diachi" rows="1"
-                                placeholder="Địa chỉ của bạn"></textarea>
-                            <textarea type="text" class="form-control p-4 mt-1" id="ghichu" rows="1"
-                                placeholder="Ghi chú"></textarea>
-                        </form>
-                    </div>
-                    <div class="align-items-center mb-4 pt-2">
-                        <button class="btn btn-primary btn-newheight mr-3">
-                            <i class="fa fa-shopping-cart mr-1"></i> Đặt mua
-                        </button>
-                    </div>
+                <div class="col-sm-6 text-center text-sm-left px-5">
+                    <h5 class="font-weight-bold mb-2">Mở cửa</h5>
+                    <p class="mb-2">Thứ 2 - thứ 6, 8h - 21h</p>
+                    <p class="mb-0">Thời gian khác chủ tiệm đi ngủ :3</p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Products End -->
-
-    <!-- Footer Start -->
-    <div class="container-fluid footer bg-light py-5" style="margin-top: 90px">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-12 mt-2 mb-4">
-                    <div class="row">
-                        <div class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0 px-5">
-                            <h5 class="font-weight-bold mb-2">Địa chỉ</h5>
-                            <p class="mb-2">KTX Khu A ĐHQG TPHCM</p>
-                            <p class="mb-0">0323456789</p>
-                        </div>
-                        <div class="col-sm-6 text-center text-sm-left px-5">
-                            <h5 class="font-weight-bold mb-2">Mở cửa</h5>
-                            <p class="mb-2">Thứ 2 - thứ 6, 8h - 21h</p>
-                            <p class="mb-0">Thời gian khác chủ tiệm đi ngủ :3</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 mb-4">
-                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fas fa-mail-bulk"></i></a>
-                </div>
-                <div class="col-12">
-                    <p class="m-0">&copy; 2022</p>
-                </div>
-            </div>
+        <div class="col-12 mb-4">
+            <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fas fa-mail-bulk"></i></a>
+        </div>
+        <div class="col-12">
+            <p class="m-0">&copy; 2022</p>
         </div>
     </div>
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+<!-- Back to Top -->
+<a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+<!-- Contact Javascript File -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
 </body>
 
 </html>

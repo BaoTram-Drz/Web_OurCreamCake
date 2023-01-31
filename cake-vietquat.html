@@ -28,42 +28,37 @@
 
 <body>
     <!-- Topbar Start -->
-    <div class="container-fluid bg-primary py-3 d-none d-md-block">
-    </div>
+    <div class="container-fluid topbar"></div>
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
-        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
-                <a href="index.html" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 display-4 text-primary">
-                        <span class="text-secondary">BÁNH</span>KEM
-                    </h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Trang chủ</a>
-                        <a href="about.html" class="nav-item nav-link">Giới thiệu</a>
-                        <a href="product.html" class="nav-item nav-link active">Sản phẩm</a>
-                    </div>
-                    <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
-                        <h1 class="m-0 display-4 text-primary">
-                            <span class="text-secondary">BÁNH</span>KEM
-                        </h1>
-                    </a>
-                    <div class="navbar-nav mr-auto py-0">
-                        <a href="service.html" class="nav-item nav-link">Dịch vụ</a>
-                        <a href="promotion.html" class="nav-item nav-link">Khuyến mãi</a>
-                        <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
-                    </div>
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="m-0 display-4 text-primary">
+                <span class="text-secondary">BÁNH</span>KEM
+            </h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Trang chủ</a>
+                <a href="about.html" class="nav-item nav-link">Giới thiệu</a>
+                <a href="product.html" class="nav-item nav-link active">Sản phẩm</a>
+            </div>
+            <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                <h1 class="m-0 display-4 text-primary">
+                    <span class="text-secondary">BÁNH</span>KEM
+                </h1>
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+                <a href="service.html" class="nav-item nav-link">Dịch vụ</a>
+                <a href="promotion.html" class="nav-item nav-link">Khuyến mãi</a>
+                <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+            </div>
         </div>
-    </div>
+    </nav>
     <!-- Navbar End -->
 
     <!-- Header Start -->
@@ -71,9 +66,9 @@
         <div class="container text-center">
             <div class="d-inline-flex align-items-center text-white">
                 <h1 class="text-white text-size-top mt-lg-6">Trang chủ</h1>
-                <i class="fa fa-heart px-3 pt-4"></i>
+                <i class="fa fa-heart traitim"></i>
                 <h1 class="text-white text-size-top mt-lg-6">Sản Phẩm</h1>
-                <i class="fa fa-heart px-3 pt-4"></i>
+                <i class="fa fa-heart traitim"></i>
                 <h1 class="text-white text-size-top mt-lg-6">Việt quất</h1>
             </div>
         </div>
@@ -84,10 +79,10 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-5">
+                <div class="col-sm-5">
                     <img class="w-100 border border-topnavcl rounded" src="imagebanhkem/sp-vietquat.png">
                 </div>
-                <div class="col-7 px-5 h-100 p-30 pt-5">
+                <div class="col-sm-7 px-5 h-100 p-30 pt-5">
                     <h1>Bánh kem việt quất</h1>
                     <div class="d-flex mb-3">
                         <div class="text-secondary mr-2">
@@ -124,30 +119,28 @@
     <!-- Products End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid footer bg-light py-5" style="margin-top: 90px">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-12 mt-2 mb-4">
-                    <div class="row">
-                        <div class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0 px-5">
-                            <h5 class="font-weight-bold mb-2">Địa chỉ</h5>
-                            <p class="mb-2">KTX Khu A ĐHQG TPHCM</p>
-                            <p class="mb-0">0323456789</p>
-                        </div>
-                        <div class="col-sm-6 text-center text-sm-left px-5">
-                            <h5 class="font-weight-bold mb-2">Mở cửa</h5>
-                            <p class="mb-2">Thứ 2 - thứ 6, 8h - 21h</p>
-                            <p class="mb-0">Thời gian khác chủ tiệm đi ngủ :3</p>
-                        </div>
+    <div class="container-fluid footer" style="margin-top: 90px">
+        <div class="row">
+            <div class="col-12 mt-2 mb-4">
+                <div class="row">
+                    <div class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0 px-5">
+                        <h5 class="font-weight-bold mb-2">Địa chỉ</h5>
+                        <p class="mb-2">KTX Khu A ĐHQG TPHCM</p>
+                        <p class="mb-0">0323456789</p>
+                    </div>
+                    <div class="col-sm-6 text-center text-sm-left px-5">
+                        <h5 class="font-weight-bold mb-2">Mở cửa</h5>
+                        <p class="mb-2">Thứ 2 - thứ 6, 8h - 21h</p>
+                        <p class="mb-0">Thời gian khác chủ tiệm đi ngủ :3</p>
                     </div>
                 </div>
-                <div class="col-12 mb-4">
-                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fas fa-mail-bulk"></i></a>
-                </div>
-                <div class="col-12">
-                    <p class="m-0">&copy; 2022</p>
-                </div>
+            </div>
+            <div class="col-12 mb-4">
+                <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fas fa-mail-bulk"></i></a>
+            </div>
+            <div class="col-12">
+                <p class="m-0">&copy; 2022</p>
             </div>
         </div>
     </div>
