@@ -85,33 +85,20 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-9">
-          <div class="contact-form bg-light rounded p-5">
-            <div id="success"></div>
+          <div class="bg-light rounded p-5">
             <form name="sentMessage" id="contactForm" novalidate="novalidate">
-              <div class="form-row">
-                <div class="col-sm-6 control-group">
-                  <input type="text" class="form-control p-4" id="name" placeholder="Tên của bạn" required="required"
-                    data-validation-required-message="Vui lòng nhập tên" />
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="col-sm-6 control-group">
-                  <input type="email" class="form-control p-4" id="email" placeholder="Email của bạn"
-                    required="required" data-validation-required-message="Vui lòng nhập email" />
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <input type="text" class="form-control p-4" id="subject" placeholder="Tiêu đề" required="required"
-                  data-validation-required-message="Vui lòng nhập tiêu đề" />
-                <p class="help-block text-danger"></p>
-              </div>
-              <div class="control-group">
-                <textarea class="form-control p-4" rows="6" id="message" placeholder="Lời nhắn" required="required"
-                  data-validation-required-message="Vui lòng nhập lời nhắn"></textarea>
-                <p class="help-block text-danger"></p>
+              <div class="d-flex pb-1">
+                <input type="text" class="form-control p-4 " id="name" placeholder="Tên của bạn" />
+                <input type="email" class="form-control p-4 col-sm-6" id="email" placeholder="Email của bạn" />
               </div>
               <div>
-                <button class="btn btn-primary btn-block py-3 px-5" type="submit" id="sendMessageButton">
+                <input type="text" class="form-control p-4" id="subject" placeholder="Tiêu đề" />
+                <textarea type="text" class="form-control p-4 mt-1" rows="6" id="message"
+                  placeholder="Lời nhắn"></textarea>
+              </div>
+              <span id="success" style="color: red;"></span>
+              <div class="align-items-center mb-4 pt-2">
+                <button class="btn btn-primary btn-block py-3 px-5" id="submitBtn">
                   GỬI TIN NHẮN
                 </button>
               </div>
@@ -165,9 +152,11 @@
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-  <!-- Contact Javascript File -->
+  <!-- Javascript File -->
   <script src="mail/jqBootstrapValidation.min.js"></script>
   <script src="mail/contact.js"></script>
+  <script src="product/product-isotope.js"></script>
+  <script src="service/service.js"></script>
 
   <!-- Template Javascript -->
   <script src="js/main.js"></script>

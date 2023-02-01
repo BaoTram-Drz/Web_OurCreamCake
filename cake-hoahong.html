@@ -93,23 +93,27 @@
                     </div>
                 </div>
                 <h3 class="font-weight-semi-bold mb-4">199k</h3>
-                <div class="d-flex mb-3 f-si pb-1 ">
-                    <form action="#" method="post">
-                        <div class="d-flex">
-                            <input type="number" class="form-control p-4" id="soluong" placeholder="Nhập số lượng" />
-                            <input type="text" class="form-control p-4" id="sdt" placeholder="Nhập số điện thoại" />
+                <form name="buyCake" id="buyCakeForm" novalidate="novalidate">
+                    <div class="d-flex mb-3 f-si pb-1 ">
+                        <div class="w-100">
+                            <div class="d-flex">
+                                <input type="number" class="form-control p-4" id="soluong" value="1" max="9" min="1"
+                                    placeholder="Nhập số lượng" />
+                                <input type="text" class="form-control p-4" id="sdt" placeholder="Nhập số điện thoại" />
+                            </div>
+                            <textarea type="text" class="form-control p-4 mt-1" id="diachi" rows="1"
+                                placeholder="Địa chỉ của bạn"></textarea>
+                            <textarea type="text" class="form-control p-4 mt-1" id="ghichu" rows="1"
+                                placeholder="Ghi chú"></textarea>
                         </div>
-                        <textarea type="text" class="form-control p-4 mt-1" id="diachi" rows="1"
-                            placeholder="Địa chỉ của bạn"></textarea>
-                        <textarea type="text" class="form-control p-4 mt-1" id="ghichu" rows="1"
-                            placeholder="Ghi chú"></textarea>
-                    </form>
-                </div>
-                <div class="align-items-center mb-4 pt-2">
-                    <button class="btn btn-primary btn-newheight mr-3">
-                        <i class="fa fa-shopping-cart mr-1"></i> Đặt mua
-                    </button>
-                </div>
+                    </div>
+                    <span id="message"></span>
+                    <div class="align-items-center mb-4 pt-2">
+                        <button class="btn btn-primary btn-newheight mr-3 w-100">
+                            <i class="fa fa-shopping-cart mr-1"></i> Đặt mua
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -157,9 +161,12 @@
 <script src="lib/isotope/isotope.pkgd.min.js"></script>
 <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-<!-- Contact Javascript File -->
+<!-- Javascript File -->
 <script src="mail/jqBootstrapValidation.min.js"></script>
 <script src="mail/contact.js"></script>
+<script src="product/product-isotope.js"></script>
+<script src="service/service.js"></script>
+<script src="cake/cake.js"></script>
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
