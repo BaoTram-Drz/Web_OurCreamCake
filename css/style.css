@@ -1944,7 +1944,7 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #58fa96;
+  color: #348854;
   background-color: rgba(255, 241, 241, 0.77);
   background-clip: padding-box;
   border: 3px dashed var(--topnav);
@@ -7685,6 +7685,9 @@ button.bg-dark:focus {
 }
 .h-1 {
   height: 10px !important;
+}
+.w-10 {
+  width: 10% !important;
 }
 .w-25 {
   width: 25% !important;
