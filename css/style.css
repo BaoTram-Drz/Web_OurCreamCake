@@ -583,7 +583,12 @@ mark,
 .blockquote-footer::before {
   content: "\2014\00A0";
 }
-
+.img-promotion {
+  width: 150px;
+  margin-left: 20% ;
+  margin-right: 20%;
+  border-radius: 20px;
+}
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -2471,8 +2476,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: #212529;
-  background-color: var(--btn1);
+  color: #e16d8e;
+  background-color: #ff4378;
   border-color: var(--btn1border);
 }
 
@@ -4242,23 +4247,32 @@ input[type="button"].btn-block {
   background-size: 100% 100%;
 }
 
+.promotion {
+  background-color: rgb(255, 212, 212);  
+  border-radius: 20px;
+  width: 100%;
+}
+
 .promotion1 {
-  background-color: rgba(157, 244, 252, 0.693);  
+  background-color: white;  
+  border-radius: 20px;
 }
 .promotion2 {
-  background-color: rgba(252, 157, 157, 0.693);  
+  background-color: white; 
+  border-right: dashed 3px rgb(120, 120, 120) ; 
+  border-radius: 20px;
+  width: 60%;
 }
 
 .promotion-text1 {
-  font-size: 3rem;
-  color: rgb(235, 255, 254);
-  text-shadow: 1px 2px 2px rgb(119, 44, 44);
+  font-size: 2rem;
   font-style: italic;
 }
 .promotion-text2 {
   width: 80%;
   margin: auto;
-  font-size: 5rem;
+  font-size: 3rem;
+  padding: 5px;
   color: white;
   background-color: var(--topnav);
   text-shadow: 1px 1px 1px rgb(106, 61, 61);
@@ -4267,21 +4281,14 @@ input[type="button"].btn-block {
   border-radius: 100px;
 }
 .promotion-text3 {
-  width: 90%;
   margin: auto;
-  font-size: 6rem;
-  color: rgb(255, 193, 78);
-  background-color: rgb(71, 28, 28);
-  text-shadow: 1px 2px 2px rgb(255, 226, 197);
+  font-size: 20px;
   font-style: italic;
-  box-shadow: 5px 5px 5px rgb(162, 43, 43);
-  border-radius: 10px;
+  color: rgb(136, 124, 124);
 }
 .promotion-text4 {
-  font-size: 6rem;
-  color: rgb(255, 193, 78);
-  text-shadow: 1px 2px 2px rgb(162, 43, 43);
-  font-style: italic;
+  font-size: 20px;
+  color: rgb(159, 145, 118);
 }
 .mt-6{
   margin-top: 70px;
@@ -4309,13 +4316,31 @@ input[type="button"].btn-block {
     font-weight: 400;
   }
   .promotion-text1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .promotion-text2 {
     font-size: 2rem;
   }
-  .promotion-text3,.promotion-text4  {
-    font-size: 2rem;
+  .promotion-text3 {
+    font-size: 10px;
+  }
+  .promotion-text4 {
+    font-size: 10px;
+  }
+  .btn-secondary {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .img-promotion {
+    width: 50px;
+    margin-left: 10% ;
+    border-radius: 20px;
+  }
+  .promotion1 {
+    padding: 10px 10px;
+  }
+  .promotion2 {
+    padding: 10% 2%;
   }
   .mt-6{
     margin-top: 10px;
@@ -4348,19 +4373,34 @@ input[type="button"].btn-block {
   .navbar-expand-sm .navbar-toggler {
     display: none;
   }
-  .promotion-text1 {
-    font-size: 2rem;
-    margin-top: 10px;
-  }
-  .promotion-text2 {
-    font-size: 3rem;
-    margin-top: 10px;
-  }
-  .promotion-text3,.promotion-text4  {
-    font-size: 3rem;
-  }
   .mt-6{
     margin-top: 0px;
+  }
+  .promotion-text1 {
+    font-size: 20px;
+  }
+  .promotion-text2 {
+    font-size: 2rem;
+  }
+  .promotion-text3 {
+    font-size: 15px;
+  }
+  .promotion-text4 {
+    font-size: 15px;
+  }
+  .btn-secondary {
+    font-size: 15px;
+  }
+  .img-promotion {
+    width: 100px;
+    margin-left: 10% ;
+    border-radius: 20px;
+  }
+  .promotion1 {
+    padding: 30px 25px;
+  }
+  .promotion2 {
+    padding: 10% 2%;
   }
 }
 
@@ -4370,6 +4410,7 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+  
 }
 
 @media (min-width: 768px) {
@@ -4398,19 +4439,34 @@ input[type="button"].btn-block {
   .navbar-expand-md .navbar-toggler {
     display: none;
   }
-  .promotion-text1 {
-    font-size: 2rem;
-    margin-top: 10px;
-  }
-  .promotion-text2 {
-    font-size: 4rem;
-    margin-top: 10px;
-  }
-  .promotion-text3,.promotion-text4  {
-    font-size: 4rem;
-  }
   .mt-6{
     margin-top: 20px;
+  }
+  .promotion-text1 {
+    font-size: 28px;
+  }
+  .promotion-text2 {
+    font-size: 2rem;
+  }
+  .promotion-text3 {
+    font-size: 20px;
+  }
+  .promotion-text4 {
+    font-size: 20px;
+  }
+  .btn-secondary {
+    font-size: 18px;
+  }
+  .img-promotion {
+    width: 150px;
+    margin-left: 5% ;
+    border-radius: 20px;
+  }
+  .promotion1 {
+    padding: 50px 50px;
+  }
+  .promotion2 {
+    padding: 8% 1%;
   }
 }
 
@@ -4448,6 +4504,32 @@ input[type="button"].btn-block {
   .navbar-expand-lg .navbar-toggler {
     display: none;
   }
+  .promotion-text1 {
+    font-size: 30px;
+  }
+  .promotion-text2 {
+    font-size: 2rem;
+  }
+  .promotion-text3 {
+    font-size: 25px;
+  }
+  .promotion-text4 {
+    font-size: 25px;
+  }
+  .btn-secondary {
+    font-size: 25px;
+  }
+  .img-promotion {
+    width: 180px;
+    margin-left: 5% ;
+    border-radius: 20px;
+  }
+  .promotion1 {
+    padding: 50px 50px;
+  }
+  .promotion2 {
+    padding: 8% 1%;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -4483,6 +4565,32 @@ input[type="button"].btn-block {
   }
   .navbar-expand-xl .navbar-toggler {
     display: none;
+  }
+  .promotion-text1 {
+    font-size: 35px;
+  }
+  .promotion-text2 {
+    font-size: 2rem;
+  }
+  .promotion-text3 {
+    font-size: 28px;
+  }
+  .promotion-text4 {
+    font-size: 28px;
+  }
+  .btn-secondary {
+    font-size: 28px;
+  }
+  .img-promotion {
+    width: 200px;
+    margin-left: 10% ;
+    border-radius: 20px;
+  }
+  .promotion1 {
+    padding: 50px 50px;
+  }
+  .promotion2 {
+    padding: 5% 1%;
   }
 }
 
@@ -7913,6 +8021,9 @@ button.bg-dark:focus {
   padding-right: 0 !important;
 }
 
+.pt-80 {
+  padding-top: 30px;
+}
 .pb-0,
 .py-0 {
   padding-bottom: 0 !important;
